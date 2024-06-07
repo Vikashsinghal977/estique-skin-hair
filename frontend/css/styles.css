@@ -454,3 +454,50 @@ button:not(:disabled) {
     width: 250px;
     }
 /* Clinic Ended  */
+
+
+/* Footer Start */
+footer {
+    background: linear-gradient(#f1cb9e, #ef990a); /* Orange color similar to the image */
+    padding: 17px 0;
+    text-align: center;
+    color: black;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.footer-content span {
+    margin: 0 5px;
+}
+
+.footer-content a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    .footer-content span {
+        margin: 5px 0;
+    }
+}
+/* Footer Ended */
