@@ -229,11 +229,16 @@ input::placeholder{
     transform: translateY(10px); /* Slightly push down when pressed */
 }
 
-@media (max-width: 600px) {
-    .button {
-        padding: 12px 25px;
-        font-size: 14px;
+@media (max-width: 768px) {
+    .request-box {
+        position: initial!important;
+        top: 0!important;
+        left: 0!important;
+        width: 100%!important;
+        transform: none!important;
+        padding: 80px 40px 40px 40px!important;
     }
+
 }
 
 /* video section end  */
@@ -291,8 +296,14 @@ input::placeholder{
 }
 
 @media (max-width: 600px) {
-    
-  
+    #Estique-Clinic{
+        flex-direction: column;
+    }
+    #Estique-Clinic-Box{
+        flex: none; /* Reset flex-grow to none */
+        width: 100%;
+        height: auto;
+    }
   }
 
 /* about neha section end */
@@ -414,8 +425,8 @@ button:not(:disabled) {
     vertical-align: middle;
     overflow-clip-margin: content-box;
     overflow: clip;
-    width: 630px;
-    height: 660px;
+    width: 480px;
+    height: 550px;
     border-radius: 10px;
 }
 #Estique-Clinic #right h2 {
@@ -452,8 +463,95 @@ button:not(:disabled) {
     font-size: 17px;
     height: auto;
     width: 250px;
+}
+@media (max-width: 600px) {
+    #Estique-Clinic{
+        flex-direction: column;
     }
+    #Estique-Clinic-Box-img{
+        width: 100%;
+    }
+    #Estique-Clinic-Box{
+        flex: none; /* Reset flex-grow to none */
+        width: 100%;
+        height: auto;
+    }
+  }
 /* Clinic Ended  */
+
+/* Why choose us Start */
+.why-choose-us {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.why-choose-us h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffac33;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-top: 15px;
+    color: #ffac33;
+}
+
+.card p {
+    font-size: 1em;
+    margin: 15px 0;
+}
+
+.card button {
+    background-color: #ffac33;
+    border: none;
+    padding: 10px 20px;
+    color: #1a1a1a;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.card button:hover {
+    background-color: #ff9900;
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+/* Why choose us Ended */
 
 /* After & Before Start  */
 .con{
