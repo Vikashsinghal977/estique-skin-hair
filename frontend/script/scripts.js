@@ -4,7 +4,8 @@ document.getElementById('navbar-toggle').addEventListener('click', function() {
         icons.style.display = 'none';
     } else {
         icons.style.display = 'flex';
-        icons.style.flexDirection = 'column';
+        icons.style.flexDirection = 'row';
+        // icons.style.gap = '0px';
     }
 });
 
