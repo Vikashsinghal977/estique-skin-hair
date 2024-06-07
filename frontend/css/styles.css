@@ -483,8 +483,88 @@ button:not(:disabled) {
     z-index: 2;
 }
 /* After & Before Ended  */
+/* Footer start */
+.uper {
+    text-align: center;
+    padding: 20px;
+}
 
-/* Footer Start */
+.logo {
+    width: 100px;
+}
+
+
+
+.uper p {
+    font-weight: bold;
+            font-size: 18px;
+            font-family: 'Josefin Sans', sans-serif;
+            color: white;
+            margin-left: 20px;
+            text-align: center;
+}
+
+/* Contact section styling */
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.location {
+    text-align: center;
+    margin: 10px;
+}
+
+.location iframe {
+    border: 0;
+    border-radius: 8px;
+    width: 464px;
+}
+
+.location p {
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.footer-content p {
+    margin: 5px;
+    font-size: 16px;
+}
+
+.footer-content i {
+    margin-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .location iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    .location {
+        width: 100%;
+    }
+}
+
+/* Footer end */
+/* fine Footer Start */
 .footer-line{
     margin-top: 20px;
 }
@@ -493,7 +573,7 @@ footer {
     padding: 17px 0;
     text-align: center;
     color: black;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     bottom: 0;
 }
