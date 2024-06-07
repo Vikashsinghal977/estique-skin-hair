@@ -455,8 +455,39 @@ button:not(:disabled) {
     }
 /* Clinic Ended  */
 
+/* After & Before Start  */
+.con{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 14300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    scrollbar-width: none;
+    
+} 
+.box img{
+    width: 250px;
+    gap: 18px;
+}
+.box{
+    width: 250px;
+    margin: 0 10px;
+    box-shadow: 0 0 20px 2px;
+    transition: 1s;
+}
+.box:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+/* After & Before Ended  */
 
 /* Footer Start */
+.footer-line{
+    margin-top: 20px;
+}
 footer {
     background: linear-gradient(#f1cb9e, #ef990a); /* Orange color similar to the image */
     padding: 17px 0;
