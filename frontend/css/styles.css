@@ -1,3 +1,7 @@
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #ef990a #1c1d1d;
+}
 body {
     background-color: #1c1d1d;
     color: #ef990a;
@@ -453,7 +457,7 @@ button:not(:disabled) {
 }
 #Estique-Clinic #right p {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     margin: 20px 40px;
     line-height: 1.6;
 }
@@ -657,7 +661,7 @@ button:not(:disabled) {
 
 .form-group input,
 .form-group select {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -699,7 +703,8 @@ button:not(:disabled) {
 /* Responsive styling */
 @media (max-width: 500px) {
     .contact-form-container {
-        padding: 20px;
+        padding: 5px;
+        width: 95%;
     }
     .form-group label {
         font-size: 0.9em;
