@@ -38,7 +38,7 @@
     <!-- Header Start -->
 
     <div class="header">
-        <div class="logo">
+        <div class="top-logo">
             <div class="i">
                 <i class="fas fa-phone"></i>
             </div>
@@ -63,7 +63,7 @@
             </div>
             <div class="request-box">
                 <h2>Book An Appointment</h2>
-                <form method="post" action="connection.php">
+                <form method="post" action="">
                     
                     <div class="user-box">
                         <label for="">Name</label>
@@ -125,9 +125,9 @@
                 </ul>
             </div>
             <p class="about" style="font-weight: bold;">Dr. Neha Sharma is the principal dermatologist at Estique Clinic. She is a renowned dermatologist not only in Gurgaon and Delhi but patients from all over the world come to visit her. Dr. Neha has a clinical experience of around 13 years and she has worked extensively in the field of dermatology, cosmetic derma    tology, venerology & leprosy. Besides having worked in top institutes like AIIMS & Safdarjung hospital, she has international work experience in Singapore & Thailand.</p>
-            <button>
-                BOOK AN APPOITNEMT
-            </button>
+            <div class="appointment">
+                <button onclick="bookAppointment()">Book an Appointment</button>
+            </div>
         </div>
     </section>
 
@@ -313,31 +313,93 @@
     </section>
     <!-- Why choose us Ended -->
     <!-- Before & After Start -->
-    <section >
+    <section class="bnf">
         <h1 style="text-align: center;
         font-size: 50px;">Before/After Result</h1>
-        <div class="con">
-            
-            <div class="box">
-                <img src="/frontend/img/A&B/Derma1.jpeg" alt="oops">
-            </div>
-            <div class="box">
-                <img src="/frontend/img/A&B/dermar_fillers.png" alt="oops">
-            </div>
-            <div class="box">
-                <img src="/frontend/img/A&B/hair_restoreative_therepy (1).png" alt="oops">
-            </div>
-            <div class="box">
-                <img src="/frontend/img/A&B/skin_boosters.png" alt="oops">
-            </div>
-            <div class="box">
-                <img src="/frontend/img/A&B/jawline-1.jpg" alt="oops">
+        <div class="ab-set">
+            <div class="container">
+                <div class="slider-wrapper">
+                    <div class="img-list">
+                        <img src="/frontend/img/A&B/Derma1.jpeg" alt="oops" class="img-item">
+                        <img src="/frontend/img/A&B/dermar_fillers.png" alt="oops" class="img-item">
+                        <img src="/frontend/img/A&B/hair_restoreative_therepy (1).png" alt="oops" class="img-item">
+                        <img src="/frontend/img/A&B/hifu_treatment.png" alt="oops" class="img-item">
+                        <img src="/frontend/img/A&B/jawline-1.jpg" alt="oops" class="img-item">
+                        <img src="/frontend/img/A&B/skin_boosters.png" alt="oops" class="img-item">
+                    </div>
+                </div>
             </div>
         </div>
+        
     </section>
     <!-- Before & After Ended -->
 
     <!-- FAQ Section Start -->
+
+    <section>
+        <div class="faq-form">
+            <div class="faq-con">
+                <div class="contact-form-container">
+                    <h2>Contact Now</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"><i class="fas fa-phone"></i> Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter Your Number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="specialty"><i class="fas fa-briefcase-medical"></i> Speciality</label>
+                            <select id="specialty" name="specialty" required>
+                                <option value="">Select Speciality</option>
+                                <option value="Dermatology">Dermatology</option>
+                                <option value="Hair Care">Hair Care</option>
+                                <option value="Cosmetology">Cosmetology</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointment-date"><i class="fas fa-calendar-alt"></i> Appointment Date</label>
+                            <input type="date" id="appointment-date" name="appointment-date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="submit-btn">Request a Call back!</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="faq-container">
+                    <h2>FAQ's</h2>
+                    <div class="faq-item">
+                        <button class="faq-question">What is Estique Skin and Hair Clinic?</button>
+                        <div class="faq-answer">
+                            <p>Estique Skin and Hair Clinic is a specialized clinic offering advanced treatments for skin and hair care.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What makes an Estique Skin and Hair Clinic unique?</button>
+                        <div class="faq-answer">
+                            <p>Estique Skin and Hair Clinic is unique due to its personalized approach, advanced technology, and expert medical professionals.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">What kind of treatments does Estique Skin and Hair Clinic offer?</button>
+                        <div class="faq-answer">
+                            <p>We offer a variety of treatments including laser therapy, hair transplants, and advanced skincare routines.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">How does an Estique Skin and Hair Clinic determine the best treatment for me?</button>
+                        <div class="faq-answer">
+                            <p>The clinic performs a thorough consultation and assessment to create a tailored treatment plan that suits your individual needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- <section>
         <div class="faq-con">
             <h1 style="text-align: center;
@@ -419,38 +481,7 @@
                 <p><i class="fas fa-map-marker-alt"></i> 1021-1022, Sector 15 Part 2, Gurugram, Haryana 122001 Behind 32nd Avenue</p>
             </div>
         </section>
-        <!-- <div style="margin: auto;
-        display: flex; 
-        justify-content: center;
-        align-items: center;
-        flex-direction: column">
-            <img src="/frontend/img/logo/estique-clinic-logo.png" alt="oops" width="160px" height="100%">
-            <p style="
-            font-weight: bold;
-            font-size: 18px;
-            font-family: 'Josefin Sans', sans-serif;
-            color: white;
-            margin-left: 20px;
-            text-align: center;
-        ">
-        Dr. Neha Sharma, MD, is acknowledged as one of the most trusted & top dermatologists in Gurgaon by her patients. We, at Estique, aim at providing comprehensive patient experience with individualized care.
-        </p>
-            
-        <div class="location">
-            <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_LINK_1" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <p><i class="fas fa-map-marker-alt"></i> 12, First Floor, Palm Springs Plaza, Golf Course Rd, DLF Phase 5, Sector 54, Gurugram, Haryana 122003</p>
-        </div>
-        <div class="location">
-            <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_LINK_2" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <p><i class="fas fa-map-marker-alt"></i> 1021-1022, Sector 15 Part 2, Gurugram, Haryana 122001 Behind 32nd Avenue</p>
-        </div>
-
-           <div>
-            <a href="">+91 78382 65456</a>
-            <a href="">+91 85956 16104</a>
-           </div>
-        
-        </div> -->
+       
     </section>
     
      <section class="footer-line">

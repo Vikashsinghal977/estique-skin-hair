@@ -10,12 +10,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 25px;
+    padding: 0px 20px;
     color: #ff9800;
 }
 .left-side{
     display: flex;
     width: 50%;
+}
+.right-side{
+    display: flex;
+    
 }
 
 .left-side marquee{
@@ -31,7 +35,7 @@ body {
 .navbar-icons  {
     display: flex;
     justify-content: center;
-    gap: 35px;
+    gap: 25px;
     padding: 5px;
 }
 
@@ -118,19 +122,20 @@ body {
         text-align: center;
     }
 
-    .logo, .appointment {
+    .top-logo, .appointment {
         width: 100%;
         height: auto;
-        /* margin-bottom: 10px; */
+        margin-bottom: 10px;
     }
 
     .title img {
         width: 100%;
         height: auto;
-
+        
     }
 
     .appointment button {
+        float: right;
         font-size: 12px;
         padding: 8px 16px;
     }
@@ -300,7 +305,7 @@ input::placeholder{
     width: 250px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     #Estique-Clinic{
         flex-direction: column;
     }
@@ -374,7 +379,7 @@ input::placeholder{
 }
 
 #services .service-box {
-    width: 370px;
+    width: 275px;
     margin: 10px;
     height: 380px;
     padding: 2em 1.5em;
@@ -473,7 +478,7 @@ button:not(:disabled) {
     height: auto;
     width: 250px;
 }
-@media (max-width: 768px) {
+@media (max-width: 868px) {
     #Estique-Clinic{
         flex-direction: column;
     }
@@ -563,33 +568,233 @@ button:not(:disabled) {
 /* Why choose us Ended */
 
 /* After & Before Start  */
-.con{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    max-width: 14300px;
-    width: 100%;
+.ab-set{
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    max-width: 1200px;
+    width: 95%;
+}
+.slider-wrapper .img-list{
+    display: grid;
+    gap: 18px;
+    font-size: 0;
     overflow-x: auto;
     scrollbar-width: none;
-    
-} 
-.box img{
-    width: 250px;
-    gap: 18px;
+    grid-template-columns: repeat(10, 1fr);
+    /* display: flex; */
 }
-.box{
-    width: 250px;
-    margin: 0 10px;
-    box-shadow: 0 0 20px 2px;
-    transition: 1s;
+.slider-wrapper .img-list::-webkit-scrollbar{
+    display: none;
 }
-.box:hover{
-    transform: scale(1.1);
-    z-index: 2;
+.slider-wrapper .img-list .img-item{
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
 }
 /* After & Before Ended  */
+
+/* FAQ Start  */
+/* Container styling */
+.faq-con{
+    max-width: 1200px;
+    width: 95%;
+}
+.faq-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.contact-form-container {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.contact-form-container h2 {
+    color: #f4b400;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.contact-form-container h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #f4b400;
+    margin: 10px auto 0;
+}
+
+/* Form styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f4b400;
+}
+
+.form-group i {
+    margin-right: 10px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+.form-group input::placeholder {
+    color: #bbb;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border: 2px solid #f4b400;
+}
+
+.recaptcha {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Submit button styling */
+.submit-btn {
+    background-color: #f4b400;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e5a200;
+}
+
+/* Responsive styling */
+@media (max-width: 500px) {
+    .contact-form-container {
+        padding: 20px;
+    }
+    .form-group label {
+        font-size: 0.9em;
+    }
+    .submit-btn {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+/* contat end  */
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* FAQ heading styling */
+.faq-container h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #f4b400;
+    position: relative;
+}
+
+.faq-container h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #f4b400;
+    margin: 10px auto 0;
+}
+
+/* FAQ item styling */
+.faq-item {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    background-color: #444;
+    color: #f4b400;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-question::after {
+    content: "\25BC";
+    font-size: 1em;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active::after {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #555;
+    padding: 0 15px;
+}
+
+.faq-answer p {
+    margin: 10px 0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .faq-container {
+        padding: 10px;
+    }
+    .faq-question {
+        font-size: 1em;
+    }
+    .faq-answer p {
+        font-size: 0.9em;
+    }
+}
+/* FAQ Ended */
+
+
 /* Footer start */
 .uper {
     text-align: center;
