@@ -9,8 +9,13 @@ document.getElementById('navbar-toggle').addEventListener('click', function() {
     }
 });
 
+document.getElementById('pageChanger').addEventListener('click', () => {
+    window.location = '/frontend/html/Thankyou..html';
+})
+
 function bookAppointment() {
-    alert('You have already booked.......');
+    alert('You booking have been successfully.......');
+    window.location.href = '/frontend/html/Thankyou..html'
     // You can replace the alert with actual redirection code:
     // window.location.href = 'your-booking-page-url';
 }
