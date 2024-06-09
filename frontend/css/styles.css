@@ -1,6 +1,7 @@
 * {
     scrollbar-width: auto;
     scrollbar-color: #ef990a #1c1d1d;
+    scroll-behavior: smooth;
 }
 body {
     background-color: #1c1d1d;
@@ -104,7 +105,7 @@ body {
     font-size: 14px;
 }
 
-.appointment button {
+.appointment a {
     background-color: #222;
     color: #ffa500;
     border: 1px solid #ffa500;
@@ -114,7 +115,7 @@ body {
     font-size: 14px;
 }
 
-.appointment button:hover {
+.appointment a:hover {
     background-color: #ffa500;
     color: #222;
 }
@@ -138,7 +139,7 @@ body {
         
     }
 
-    .appointment button {
+    .appointment a {
         float: right;
         font-size: 12px;
         padding: 8px 16px;
@@ -294,7 +295,7 @@ input::placeholder{
     text-align: justify;
 }
 
-#Estique-Clinic #right button {
+#Estique-Clinic #right a {
     cursor: pointer;
     margin: 40px;
     border-color: #ef990a;
@@ -411,7 +412,7 @@ input::placeholder{
     font-size: 23px;
 }
 
-#services .service-box button {
+#services .service-box a {
     background-color: #ef990a;
     color: #fff;
     transition: transform 0.3s ease;
@@ -424,7 +425,7 @@ input::placeholder{
     font-size: 18px;
 }
 
-button:not(:disabled) {
+a:not(:disabled) {
     cursor: pointer;
 }
 /* Services End */
@@ -464,11 +465,11 @@ button:not(:disabled) {
 #Estique-Clinic #right span {
     display: block;
     font-family: 'Josefin Sans', sans-serif;
-    line-height: 1.6;
+    line-height: 3.0;
     font-size: 20px;
     margin: 0px 75px;
 }
-#Estique-Clinic #right button {
+#Estique-Clinic #right a {
     cursor: pointer;
     margin: 40px;
     border-color: #ef990a;
@@ -481,6 +482,7 @@ button:not(:disabled) {
     font-size: 17px;
     height: auto;
     width: 250px;
+    border: 2px solid;
 }
 @media (max-width: 868px) {
     #Estique-Clinic{
@@ -545,7 +547,7 @@ button:not(:disabled) {
     margin: 15px 0;
 }
 
-.card button {
+.card a {
     background-color: #ffac33;
     border: none;
     padding: 10px 20px;
@@ -555,7 +557,7 @@ button:not(:disabled) {
     transition: background-color 0.2s;
 }
 
-.card button:hover {
+.card a:hover {
     background-color: #ff9900;
 }
 
@@ -705,6 +707,7 @@ button:not(:disabled) {
     .contact-form-container {
         padding: 5px;
         width: 95%;
+        /* flex-direction: ; */
     }
     .form-group label {
         font-size: 0.9em;

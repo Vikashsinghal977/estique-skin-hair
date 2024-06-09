@@ -10,7 +10,7 @@ document.getElementById('navbar-toggle').addEventListener('click', function() {
 });
 
 function bookAppointment() {
-    alert('Redirecting to the appointment booking page...');
+    alert('You have already booked.......');
     // You can replace the alert with actual redirection code:
     // window.location.href = 'your-booking-page-url';
 }
